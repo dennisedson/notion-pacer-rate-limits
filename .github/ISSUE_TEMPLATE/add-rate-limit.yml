@@ -1,0 +1,42 @@
+name: "Add / update a rate limit"
+description: Request a new API's rate limit or flag an existing one as stale.
+title: "[rate limit]: <service name>"
+labels: ["rate-limit"]
+body:
+  - type: input
+    id: service
+    attributes:
+      label: Service name
+      description: Lowercase key as it would appear in the registry (e.g. hubspot).
+      placeholder: hubspot
+    validations:
+      required: true
+  - type: input
+    id: source-url
+    attributes:
+      label: Official docs URL
+      description: Link to the official rate-limit documentation.
+      placeholder: https://developers.example.com/docs/rate-limits
+    validations:
+      required: true
+  - type: input
+    id: allowed-requests
+    attributes:
+      label: Allowed requests
+      placeholder: "10"
+    validations:
+      required: true
+  - type: input
+    id: interval-ms
+    attributes:
+      label: Interval (ms)
+      placeholder: "1000"
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes / caveats
+      description: Does the limit vary by plan, tier, or endpoint? Anything a conservative default should account for?
+    validations:
+      required: false

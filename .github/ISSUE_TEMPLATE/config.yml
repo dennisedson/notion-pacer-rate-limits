@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question / discussion
+    url: https://github.com/dennisedson/notion-runner-rate-limits/discussions
+    about: Ask questions or share ideas in Discussions.
