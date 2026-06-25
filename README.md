@@ -67,7 +67,7 @@ Is a real, installable helper for **pacing many APIs from config** (env-var
 overrides, dynamic lookup) something you'd actually use, or is grabbing the
 numbers enough? We're gauging demand before adding a runtime dependency.
 
-👉 **Weigh in here:** [Discussion: should we ship a runtime helper?](https://github.com/dennisedson/notion-runner-rate-limits/discussions)
+👉 **Weigh in here:** [open a discussion under Ideas](https://github.com/dennisedson/notion-runner-rate-limits/discussions/categories/ideas)
 
 ## Caveats
 

@@ -1,0 +1,24 @@
+title: "[idea] "
+labels: ["idea"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing an idea for **notion-runner-rate-limits**! This repo
+        is data-first — a curated reference of API rate limits for Notion
+        Workers. Ideas about the data, the tooling, or whether to ship an
+        installable runtime helper are all welcome.
+  - type: textarea
+    id: idea
+    attributes:
+      label: What's the idea?
+      description: Describe what you'd like to see and the problem it solves.
+    validations:
+      required: true
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Your use case
+      description: How many APIs are you pacing? Would config-driven / env-var overrides matter to you?
+    validations:
+      required: false
