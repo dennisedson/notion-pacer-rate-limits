@@ -1,8 +1,108 @@
 {
+  "airtable": {
+    "allowedRequests": 5,
+    "intervalMs": 1000,
+    "sourceUrl": "https://airtable.com/developers/web/api/rate-limits"
+  },
+  "anthropic": {
+    "allowedRequests": 50,
+    "intervalMs": 60000,
+    "sourceUrl": "https://platform.claude.com/docs/en/api/rate-limits"
+  },
+  "asana": {
+    "allowedRequests": 150,
+    "intervalMs": 60000,
+    "sourceUrl": "https://developers.asana.com/docs/rate-limits"
+  },
+  "calendly": {
+    "allowedRequests": 60,
+    "intervalMs": 60000,
+    "sourceUrl": "https://developer.calendly.com/api-docs/edca8074633f8-api-rate-limits"
+  },
+  "clickup": {
+    "allowedRequests": 100,
+    "intervalMs": 60000,
+    "sourceUrl": "https://developer.clickup.com/docs/rate-limits"
+  },
+  "cloudflare": {
+    "allowedRequests": 1200,
+    "intervalMs": 300000,
+    "sourceUrl": "https://developers.cloudflare.com/fundamentals/api/reference/limits/"
+  },
+  "discord": {
+    "allowedRequests": 50,
+    "intervalMs": 1000,
+    "sourceUrl": "https://docs.discord.com/developers/topics/rate-limits"
+  },
   "github": {
     "allowedRequests": 83,
     "intervalMs": 60000,
     "sourceUrl": "https://docs.github.com/rest/using-the-rest-api/rate-limits-for-the-rest-api"
+  },
+  "gitlab": {
+    "allowedRequests": 2000,
+    "intervalMs": 60000,
+    "sourceUrl": "https://docs.gitlab.com/user/gitlab_com/#rate-limits-on-gitlabcom"
+  },
+  "googlecalendar": {
+    "allowedRequests": 600,
+    "intervalMs": 60000,
+    "sourceUrl": "https://developers.google.com/workspace/calendar/api/guides/quota"
+  },
+  "hubspot": {
+    "allowedRequests": 100,
+    "intervalMs": 10000,
+    "sourceUrl": "https://developers.hubspot.com/docs/guides/apps/api-usage/usage-details"
+  },
+  "intercom": {
+    "allowedRequests": 10000,
+    "intervalMs": 60000,
+    "sourceUrl": "https://developers.intercom.com/docs/references/rest-api/errors/rate-limiting"
+  },
+  "linear": {
+    "allowedRequests": 2500,
+    "intervalMs": 3600000,
+    "sourceUrl": "https://linear.app/developers/rate-limiting"
+  },
+  "mailchimp": {
+    "allowedRequests": 10,
+    "intervalMs": 1000,
+    "sourceUrl": "https://mailchimp.com/developer/marketing/docs/fundamentals/"
+  },
+  "notion": {
+    "allowedRequests": 3,
+    "intervalMs": 1000,
+    "sourceUrl": "https://developers.notion.com/reference/request-limits"
+  },
+  "openai": {
+    "allowedRequests": 500,
+    "intervalMs": 60000,
+    "sourceUrl": "https://developers.openai.com/api/docs/guides/rate-limits"
+  },
+  "openweather": {
+    "allowedRequests": 60,
+    "intervalMs": 60000,
+    "sourceUrl": "https://openweathermap.org/price"
+  },
+  "resend": {
+    "allowedRequests": 5,
+    "intervalMs": 1000,
+    "sourceUrl": "https://resend.com/docs/api-reference/rate-limit"
+  },
+  "salesforce": {
+    "allowedRequests": 100000,
+    "intervalMs": 86400000,
+    "sourceUrl": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_limits.htm"
+  },
+  "sendgrid": {
+    "allowedRequests": 10000,
+    "intervalMs": 1000,
+    "sourceUrl": "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/v3-mail-send-faq"
+  },
+  "sentry": {
+    "allowedRequests": 40,
+    "intervalMs": 1000,
+    "sourceUrl": "https://docs.sentry.io/api/ratelimits/"
   },
   "shopify": {
     "allowedRequests": 2,
@@ -18,5 +118,35 @@
     "allowedRequests": 100,
     "intervalMs": 1000,
     "sourceUrl": "https://docs.stripe.com/rate-limits"
+  },
+  "telegram": {
+    "allowedRequests": 30,
+    "intervalMs": 1000,
+    "sourceUrl": "https://core.telegram.org/bots/faq"
+  },
+  "todoist": {
+    "allowedRequests": 1000,
+    "intervalMs": 900000,
+    "sourceUrl": "https://developer.todoist.com/rest/v2/"
+  },
+  "trello": {
+    "allowedRequests": 100,
+    "intervalMs": 10000,
+    "sourceUrl": "https://developer.atlassian.com/cloud/trello/guides/rest-api/rate-limits/"
+  },
+  "twilio": {
+    "allowedRequests": 1,
+    "intervalMs": 1000,
+    "sourceUrl": "https://support.twilio.com/hc/en-us/articles/115002943027-Understanding-Twilio-Rate-Limits-and-Message-Queues"
+  },
+  "zendesk": {
+    "allowedRequests": 100,
+    "intervalMs": 60000,
+    "sourceUrl": "https://developer.zendesk.com/api-reference/introduction/rate-limits/"
+  },
+  "zoom": {
+    "allowedRequests": 2,
+    "intervalMs": 1000,
+    "sourceUrl": "https://developers.zoom.us/docs/api/rate-limits/"
   }
 }

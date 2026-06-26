@@ -6,6 +6,15 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Added
+
+- Expanded the registry from 4 to 30 APIs, covering comms/email (SendGrid,
+  Twilio, Mailchimp, Resend, Discord, Telegram), productivity/PM (Asana, Trello,
+  Linear, Airtable, Calendly, Zoom, ClickUp, Todoist), AI/dev/infra (OpenAI,
+  Anthropic, GitLab, Cloudflare, Sentry), CRM/support (HubSpot, Salesforce,
+  Intercom, Zendesk, Google Calendar), and data (Notion, OpenWeather). Each
+  value is sourced from official docs with a caveat noting tier/plan nuance.
+
 ### Changed
 
 - Repositioned as a **data-first reference**: the registry is the product.

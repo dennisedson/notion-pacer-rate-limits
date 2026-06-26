@@ -15,17 +15,47 @@ value and drop it into your `worker.pacer(...)` call. No install required.**
 ## The limits
 
 Every value links to the official docs it came from. These are **conservative
-defaults** — see the [caveats](#caveats) below.
+defaults**; see the [caveats](#caveats) below.
 
-| Service | Allowed requests | Interval            | Source                                                                               |
-| ------- | ---------------- | ------------------- | ------------------------------------------------------------------------------------ |
-| GitHub  | 83               | 60,000 ms (per min) | [docs](https://docs.github.com/rest/using-the-rest-api/rate-limits-for-the-rest-api) |
-| Shopify | 2                | 1,000 ms (per sec)  | [docs](https://shopify.dev/docs/api/usage/rate-limits)                               |
-| Slack   | 50               | 60,000 ms (per min) | [docs](https://api.slack.com/docs/rate-limits)                                       |
-| Stripe  | 100              | 1,000 ms (per sec)  | [docs](https://docs.stripe.com/rate-limits)                                          |
+| Service        | Allowed requests | Interval                | Source                                                                                                                |
+| -------------- | ---------------- | ----------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| airtable       | 5                | 1,000 ms (per sec)      | [docs](https://airtable.com/developers/web/api/rate-limits)                                                           |
+| anthropic      | 50               | 60,000 ms (per min)     | [docs](https://platform.claude.com/docs/en/api/rate-limits)                                                           |
+| asana          | 150              | 60,000 ms (per min)     | [docs](https://developers.asana.com/docs/rate-limits)                                                                 |
+| calendly       | 60               | 60,000 ms (per min)     | [docs](https://developer.calendly.com/api-docs/edca8074633f8-api-rate-limits)                                         |
+| clickup        | 100              | 60,000 ms (per min)     | [docs](https://developer.clickup.com/docs/rate-limits)                                                                |
+| cloudflare     | 1,200            | 300,000 ms (per 5 min)  | [docs](https://developers.cloudflare.com/fundamentals/api/reference/limits/)                                          |
+| discord        | 50               | 1,000 ms (per sec)      | [docs](https://docs.discord.com/developers/topics/rate-limits)                                                        |
+| github         | 83               | 60,000 ms (per min)     | [docs](https://docs.github.com/rest/using-the-rest-api/rate-limits-for-the-rest-api)                                  |
+| gitlab         | 2,000            | 60,000 ms (per min)     | [docs](https://docs.gitlab.com/user/gitlab_com/#rate-limits-on-gitlabcom)                                             |
+| googlecalendar | 600              | 60,000 ms (per min)     | [docs](https://developers.google.com/workspace/calendar/api/guides/quota)                                             |
+| hubspot        | 100              | 10,000 ms (per 10 sec)  | [docs](https://developers.hubspot.com/docs/guides/apps/api-usage/usage-details)                                       |
+| intercom       | 10,000           | 60,000 ms (per min)     | [docs](https://developers.intercom.com/docs/references/rest-api/errors/rate-limiting)                                 |
+| linear         | 2,500            | 3,600,000 ms (per hour) | [docs](https://linear.app/developers/rate-limiting)                                                                   |
+| mailchimp      | 10               | 1,000 ms (per sec)      | [docs](https://mailchimp.com/developer/marketing/docs/fundamentals/)                                                  |
+| notion         | 3                | 1,000 ms (per sec)      | [docs](https://developers.notion.com/reference/request-limits)                                                        |
+| openai         | 500              | 60,000 ms (per min)     | [docs](https://developers.openai.com/api/docs/guides/rate-limits)                                                     |
+| openweather    | 60               | 60,000 ms (per min)     | [docs](https://openweathermap.org/price)                                                                              |
+| resend         | 5                | 1,000 ms (per sec)      | [docs](https://resend.com/docs/api-reference/rate-limit)                                                              |
+| salesforce     | 100,000          | 86,400,000 ms (per day) | [docs](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_limits.htm)                 |
+| sendgrid       | 10,000           | 1,000 ms (per sec)      | [docs](https://www.twilio.com/docs/sendgrid/for-developers/sending-email/v3-mail-send-faq)                            |
+| sentry         | 40               | 1,000 ms (per sec)      | [docs](https://docs.sentry.io/api/ratelimits/)                                                                        |
+| shopify        | 2                | 1,000 ms (per sec)      | [docs](https://shopify.dev/docs/api/usage/rate-limits)                                                                |
+| slack          | 50               | 60,000 ms (per min)     | [docs](https://api.slack.com/docs/rate-limits)                                                                        |
+| stripe         | 100              | 1,000 ms (per sec)      | [docs](https://docs.stripe.com/rate-limits)                                                                           |
+| telegram       | 30               | 1,000 ms (per sec)      | [docs](https://core.telegram.org/bots/faq)                                                                            |
+| todoist        | 1,000            | 900,000 ms (per 15 min) | [docs](https://developer.todoist.com/rest/v2/)                                                                        |
+| trello         | 100              | 10,000 ms (per 10 sec)  | [docs](https://developer.atlassian.com/cloud/trello/guides/rest-api/rate-limits/)                                     |
+| twilio         | 1                | 1,000 ms (per sec)      | [docs](https://support.twilio.com/hc/en-us/articles/115002943027-Understanding-Twilio-Rate-Limits-and-Message-Queues) |
+| zendesk        | 100              | 60,000 ms (per min)     | [docs](https://developer.zendesk.com/api-reference/introduction/rate-limits/)                                         |
+| zoom           | 2                | 1,000 ms (per sec)      | [docs](https://developers.zoom.us/docs/api/rate-limits/)                                                              |
 
 Machine-readable version: [`registry.json`](./registry.json) (generated from
 [`src/registry.ts`](./src/registry.ts)).
+
+Two notably common APIs are intentionally absent: Dropbox and PayPal both
+officially decline to publish numeric rate limits (they throttle dynamically
+and return `Retry-After`), so there's no honest value to record.
 
 ## Using a limit
 
