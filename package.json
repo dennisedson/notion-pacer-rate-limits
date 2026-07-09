@@ -36,15 +36,15 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "@types/node": "^26.0.1",
-    "@vitest/coverage-v8": "^4.1.9",
-    "eslint": "^10.5.0",
+    "@types/node": "^26.1.1",
+    "@vitest/coverage-v8": "^4.1.10",
+    "eslint": "^10.6.0",
     "eslint-config-prettier": "^10.1.8",
     "globals": "^17.7.0",
-    "prettier": "^3.3.0",
-    "tsx": "^4.15.0",
-    "typescript": "^6.0.3",
-    "typescript-eslint": "^8.0.0",
+    "prettier": "^3.9.4",
+    "tsx": "^4.23.0",
+    "typescript": "^7.0.2",
+    "typescript-eslint": "^8.63.0",
     "vitest": "^4.1.9"
   }
 }
